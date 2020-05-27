@@ -13,7 +13,7 @@ class App extends Component {
           showForm ? 
           <RecipeForm 
             handleSave={this.handleSave}
-            
+            onClose={() =>this.setState({showForm: false})}
           />
         }
       </div>
