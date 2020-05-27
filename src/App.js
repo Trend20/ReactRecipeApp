@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import RecipeForm from './components/RecipeForm';
+import RecipeList from './components/RecipeList';
  
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      
+    }
+  }
   render() { 
     const { showForm } = this.state;
     return (
@@ -17,6 +24,7 @@ class App extends Component {
           />
           :null
         }
+        <RecipeList {...this.state}/>
       </div>
     );
   }
