@@ -11,7 +11,10 @@ class App extends Component {
         <Navbar newRecipe={() =>this.setState({showForm: true})}/>
         {
           showForm ? 
-          <RecipeForm />
+          <RecipeForm 
+            handleSave={this.handleSave}
+            
+          />
         }
       </div>
     );
