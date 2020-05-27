@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Navbar extends Component{
     render(){
@@ -16,5 +17,8 @@ class Navbar extends Component{
         )
     }
 }
+Navbar.propTypes={
+    newRecipe: PropTypes.func.isRequired
+};
 
 export default Navbar;
