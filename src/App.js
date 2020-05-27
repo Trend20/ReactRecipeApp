@@ -15,6 +15,7 @@ class App extends Component {
             handleSave={this.handleSave}
             onClose={() =>this.setState({showForm: false})}
           />
+          :null
         }
       </div>
     );
