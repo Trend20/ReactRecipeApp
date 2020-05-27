@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      Hello world
-    </div>
-  );
+import Navbar from './components/Navbar';
+ 
+class App extends Component {
+  render() { 
+    const { showForm } = this.state;
+    return (
+      <div>
+        <Navbar />
+      </div>
+    );
+  }
 }
-
+ 
 export default App;
