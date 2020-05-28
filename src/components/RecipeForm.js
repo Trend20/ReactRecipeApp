@@ -22,6 +22,26 @@ class RecipeForm extends Component {
           img: ''
         });
       }
+      handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value });
+      }
+    
+      handleNewIngredient = (e) => {
+        const { ingredients } = this.state;
+        this.setState({
+          ingredients: [...ingredients, '']
+        });
+      }
+    
+      handleChangeIng = (e) => {
+        const ChangeIndex = Number(e.target.name.split('-')[1]);
+    
+        const ingredients = this.state.ingredients.map((ing, i) => (
+          i == ChangeIndex ? e.target.value: ing
+        ));
+    
+        this.setState({ ingredients });
+      }
     render() { 
         return (
             <div>
