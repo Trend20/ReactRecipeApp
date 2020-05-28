@@ -61,6 +61,33 @@ class RecipeForm extends Component {
         this.clearForm();
       }    
     render() { 
+        const {
+            title,
+            instructions,
+            ingredients,
+            img
+          } = this.state;
+      
+          const { onClose } = this.props;
+      
+          // loop through ingredients and make an array of inputs
+          const inputs = ingredients.map((ing, i) => {
+            return (
+              <div className="recipe-form-line"
+                key={`ingredient-${i}`}>
+                <label>{i+1}.
+                  <input
+                    type="text"
+                    name={`ingredient-${i}`}
+                    value={ing}
+                    size={45}
+                    autoComplete="off"
+                    placeholder="Ingredient"
+                    onChange={this.handleChangeIng} />
+                </label>
+              </div>
+            );
+          });
         return (
             <div>
                 RecipeForm
