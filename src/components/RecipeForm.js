@@ -88,6 +88,7 @@ class RecipeForm extends Component {
               </div>
             );
           });
+          return(
           <div className="recipe-form-container">
           <form className='recipe-form' onSubmit={this.handleSubmit}>
             <button
