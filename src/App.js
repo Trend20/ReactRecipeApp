@@ -8,8 +8,19 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state={
-      
+      recipes,
+      showForm: false,
     }
+  }
+
+  handleSave = (recipe) =>{
+    this.setState((prevState, props) =>{
+      const recipes = [recipe, ...prevState.recipes];
+      return {
+        recipes,
+        showForm: false
+      };
+    });
   }
   render() { 
     const { showForm } = this.state;
