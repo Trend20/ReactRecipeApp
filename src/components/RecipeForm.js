@@ -42,6 +42,24 @@ class RecipeForm extends Component {
     
         this.setState({ ingredients });
       }
+      handleSubmit = (e) => {
+        e.preventDefault();
+    
+        console.log(e)
+    
+        const {
+          title,
+          img,
+          instructions
+        } = this.state;
+    
+        if(!title || !img || !instructions) {
+          return;
+        }
+    
+        this.props.handleSave({...this.state});
+        this.clearForm();
+      }    
     render() { 
         return (
             <div>
