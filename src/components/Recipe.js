@@ -27,5 +27,8 @@ class Recipe extends Component {
         );
     }
 }
+Recipe.propTypes={
+    
+}
  
 export default Recipe;
