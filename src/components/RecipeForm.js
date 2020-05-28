@@ -162,5 +162,10 @@ class RecipeForm extends Component {
       );
     }
   }
+  RecipeForm.propTypes = {
+    onClose: PropTypes.func.isRequired,
+    handleSave: PropTypes.func.isRequired
+  };
+  
  
 export default RecipeForm;
