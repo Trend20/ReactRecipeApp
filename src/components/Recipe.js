@@ -28,7 +28,10 @@ class Recipe extends Component {
     }
 }
 Recipe.propTypes={
-    
-}
+    title: PropTypes.string.isRequired,
+    ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
+    instructions:PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+};
  
 export default Recipe;
