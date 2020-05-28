@@ -10,8 +10,11 @@ class Recipe extends Component {
             </li>
         ));
         return (
-            <div>
-                Recipe
+            <div className="recipe-card">
+                <div className="recipe-card-imag">
+                  <img src={img} alt={title} />
+
+                </div>
             </div>
         );
     }
