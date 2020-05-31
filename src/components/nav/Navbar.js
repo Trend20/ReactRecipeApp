@@ -10,7 +10,8 @@ class Navbar extends Component{
     render(){
         const { newRecipe } = this.props;
         return(
-            <header>
+            <Router>
+                <header>
                 <h2><a>Recipe App</a></h2>
                 <nav>
                     <li><a onClick={newRecipe}>New Recipe</a></li>
@@ -19,6 +20,7 @@ class Navbar extends Component{
                     <li><a>Contact Us</a></li>
                 </nav>
             </header>
+            </Router>
         )
     }
 }
