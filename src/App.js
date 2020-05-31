@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 
 import recipes from './assets/recipes.json';
-import Navbar from './components/Navbar';
 import RecipeForm from './components/RecipeForm';
 import RecipeList from './components/RecipeList';
+import Navbar from './components/nav/Navbar';
  
 class App extends Component {
   constructor(props){
