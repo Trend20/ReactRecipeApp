@@ -21,6 +21,10 @@ class Navbar extends Component{
                     <li><Link to={'/contact'} className="nav-link">Contact</Link></li>
                     </ul>
                 </nav>
+                <hr />
+                <Switch>
+                    <Route></Route>
+                </Switch>
             </header>
             </Router>
         )
