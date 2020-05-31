@@ -13,11 +13,13 @@ class Navbar extends Component{
             <Router>
                 <header>
                 <h2><a>Recipe App</a></h2>
-                <nav>
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <ul className="navbar-nav mr-auto">
                     <li><a onClick={newRecipe}>New Recipe</a></li>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Contact Us</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    </ul>
                 </nav>
             </header>
             </Router>
