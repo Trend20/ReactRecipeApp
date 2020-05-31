@@ -11,7 +11,7 @@ class Recipe extends Component {
         ));
         return (
             <div className="recipe-card">
-                <div className="recipe-card-imag">
+                <div className="recipe-card-img">
                   <img src={img} alt={title} />
                 </div>
                 <div className="recipe-card-content">
