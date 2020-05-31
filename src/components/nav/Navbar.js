@@ -23,7 +23,9 @@ class Navbar extends Component{
                 </nav>
                 <hr />
                 <Switch>
-                    <Route></Route>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/contact" component={Contact}/>
                 </Switch>
             </header>
             </Router>
