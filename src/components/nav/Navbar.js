@@ -16,7 +16,7 @@ class Navbar extends Component{
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <ul className="navbar-nav mr-auto">
                     <li><a onClick={newRecipe}>New Recipe</a></li>
-                    <li></li>
+                    <li><Link to={'/'} className="nav-link">Home</Link></li>
                     <li></li>
                     <li></li>
                     </ul>
