@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import RecipeList from '../RecipeList';
  
-class Home extends Component {
-    render() { 
-        return (
-            <div>
-                <h3>This is the home page</h3>
-            </div>
-        );
-    }
+const Home = () => {
+    return (
+        <div>
+            {/* <RecipeList /> */}
+        </div>
+    );
 }
  
 export default Home;
