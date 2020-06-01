@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import App from '../../App';
  
 class About extends Component {
     render() { 
         return (
             <div>
-                <h3>THis is the about page</h3>
+                <App />
             </div>
         );
     }
