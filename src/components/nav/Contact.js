@@ -23,6 +23,7 @@ class Contact extends Component {
                 value={this.state.message}
                 onChange={(e) =>this.state.handleInput('message', e.target.value)}
                 />
+                <button onClick={() =>this.addMessage()}>Submit</button>
             </div>
         );
     }
