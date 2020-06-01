@@ -19,26 +19,29 @@ class Contact extends Component {
     render() { 
         return (
             <div className="contact">
-                <h3>Contact Us</h3>
+                <h3 className="text-center text-secondary">Contact Us</h3>
                 <input 
+                className="form-control"
                 type="text"
                 placeholder="Enter Username"
                 value={this.state.username}
                 onChange={(e) =>this.handleInput('username', e.target.value)}
                 />
                 <input
+                className="form-control"
                 type="email"
                 placeholder="Enter email"
                 onChange={(e) =>this.handleInput('email', e.target.value)}
                 value={this.state.email}
                 />
                 <input
+                className="form-control"
                 type="textbox"
                 placeholder="Message"
                 value={this.state.message}
                 onChange={(e) =>this.state.handleInput('message', e.target.value)}
                 />
-                <button onClick={() =>this.addMessage()}>Submit</button>
+                <button className="btn btn-primary" onClick={() =>this.addMessage()}>Submit</button>
             </div>
         );
     }
