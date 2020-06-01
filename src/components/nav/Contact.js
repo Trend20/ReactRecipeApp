@@ -5,6 +5,14 @@ class Contact extends Component {
         return (
             <div className="contact">
                 <h3>Contact Us</h3>
+                <input 
+                type="text"
+                placeholder="Enter Username"
+                value={this.state.username}
+                onChange={(e) =>this.handleNameInput('username', e.target.value)}
+                />
+                <input
+                type
             </div>
         );
     }
