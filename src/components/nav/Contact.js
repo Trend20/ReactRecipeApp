@@ -10,10 +10,12 @@ class Contact extends Component {
         }
     }
     handleInput = (event) =>{
-        
+        const {name, value} = e.target;
+        this.setState({
+            [name]:value,
+        });
     }
     render() { 
-        const { name, value} = e.target;
         return (
             <div className="contact">
                 <h3>Contact Us</h3>
