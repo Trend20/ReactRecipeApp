@@ -9,10 +9,14 @@ class Contact extends Component {
                 type="text"
                 placeholder="Enter Username"
                 value={this.state.username}
-                onChange={(e) =>this.handleNameInput('username', e.target.value)}
+                onChange={(e) =>this.handleInput('username', e.target.value)}
                 />
                 <input
-                type
+                type="email"
+                placeholder="Enter email"
+                onChange={(e) =>this.handleInput('email', e.target.value)}
+                value={this.state.email}
+                />
             </div>
         );
     }
