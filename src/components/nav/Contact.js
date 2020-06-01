@@ -17,6 +17,12 @@ class Contact extends Component {
                 onChange={(e) =>this.handleInput('email', e.target.value)}
                 value={this.state.email}
                 />
+                <input
+                type="textbox"
+                placeholder="Message"
+                value={this.state.message}
+                onChange={(e) =>this.state.handleInput('message', e.target.value)}
+                />
             </div>
         );
     }
