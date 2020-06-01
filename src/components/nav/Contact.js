@@ -10,7 +10,7 @@ class Contact extends Component {
             message:[],
         }
     }
-    handleInput = (event) =>{
+    handleInput = (e) =>{
         const {name, value} = e.target;
         this.setState({
             [name]:value,
