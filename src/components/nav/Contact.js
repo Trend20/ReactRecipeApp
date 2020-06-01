@@ -9,7 +9,11 @@ class Contact extends Component {
             message:[],
         }
     }
+    handleInput = (event) =>{
+        
+    }
     render() { 
+        const { name, value} = e.target;
         return (
             <div className="contact">
                 <h3>Contact Us</h3>
