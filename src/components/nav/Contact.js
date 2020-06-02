@@ -29,7 +29,7 @@ class Contact extends Component {
                 <textarea
                 placeholder="Message"
                 value={this.state.message}
-                onChange={(e) =>this.state.handleInput('message', e.target.value)}
+                onChange={this.handleMessageText.bind(this)}
                 />
                 <button className="btn btn-primary" onClick={() =>this.addMessage()}>Submit</button>
             </div>
