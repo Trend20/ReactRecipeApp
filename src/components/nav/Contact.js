@@ -36,13 +36,13 @@ class Contact extends Component {
         return (
             <div className="contact">
                 <form id="contact-form" method="POST">
-                <h3 className="text-center text-secondary">Contact Us</h3>
-                <input 
-                type="text"
-                placeholder="Enter Username"
-                value={this.state.username}
-                onChange={this.handleUsernameInput.bind(this)}
-                />
+                   <h3 className="text-center text-secondary">Contact Us</h3>
+                  <input 
+                  type="text"
+                  placeholder="Enter Username"
+                  value={this.state.username}
+                  onChange={this.handleUsernameInput.bind(this)}
+                  />
                 <input
                 type="email"
                 placeholder="Enter email"
