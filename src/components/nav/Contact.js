@@ -23,7 +23,7 @@ class Contact extends Component {
                 <input
                 type="email"
                 placeholder="Enter email"
-                onChange={(e) =>this.handleInput('email', e.target.value)}
+                onChange={this.handleEmailInput.bind(this)}
                 value={this.state.email}
                 />
                 <textarea
