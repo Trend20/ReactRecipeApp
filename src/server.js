@@ -14,3 +14,5 @@ const transport = {
         pass: creds.PASS,
     }
 }
+
+let transporter = nodemailer.createTransport(transport);
