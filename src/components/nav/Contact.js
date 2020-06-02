@@ -39,7 +39,12 @@ class Contact extends Component {
             url: 'http://localhost:3002/send',
             data: this.state
         }).then((response) =>{
-            
+            if(response.data.status === 'success'){
+                alert('Message Sent');
+                this.resetForm();
+            }else if(response.data.status === 'fail'){
+                alert('Message Filed to send');
+            }
         })
 
     }
