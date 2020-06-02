@@ -27,13 +27,13 @@ transporter.verify((error, success) =>{
 
 
 router.post('./send', (req,res,next) =>{
-    const name = req.body.name
+    const username = req.body.username
     const email = req.body.email
     const message = req.body .message
-    const content = ` name: ${name} \n email: ${email} \n message: ${message}`
+    const content = ` username: ${username} \n email: ${email} \n message: ${message}`
 
     const mail={
-        from: name,
+        from: username,
         to: 'Receiving email', 
         // email you intend to use to receive emails
         subject: 'New message fro contact form',

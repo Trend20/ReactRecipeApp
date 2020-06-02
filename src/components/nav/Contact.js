@@ -48,6 +48,13 @@ class Contact extends Component {
         })
 
     }
+    resetForm(){
+        this.setState({
+            username: '',
+            email:'',
+            message:''
+        });
+    }
     render() { 
         return (
             <div className="contact">
@@ -55,7 +62,10 @@ class Contact extends Component {
                 <h3>Welcome to Steve's Recipe</h3>
                 <p>You can always connect with us at a 24/7 basis.</p>
             </div>
-                <form id="contact-form" method="POST">
+                <form 
+                id="contact-form" 
+                method="POST"
+                onSubmit={this.handleSubmit.bind(this)}>
                    <h3 className="text-center text-secondary">Contact Us</h3>
                   <div className="form-group">
                   <input 
@@ -85,7 +95,7 @@ class Contact extends Component {
                   onChange={this.handleMessageText.bind(this)}
                 />
                 </div>
-                <button onClick={this.handleSubmit.bind(this)} id="button">Submit</button>
+                <button  id="button">Submit</button>
                 </form>
             </div>
         );
