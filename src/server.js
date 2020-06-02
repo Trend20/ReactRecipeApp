@@ -39,4 +39,12 @@ router.post('./send', (req,res,next) =>{
         subject: 'New message fro contact form',
         text: content
     }
+
+    transporter.sendMail(mail,(err,data) =>{
+        if(err){
+            res.json({
+                status: 'fail'
+            })
+        }
+    })
 })
