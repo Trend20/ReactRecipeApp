@@ -31,7 +31,7 @@ class Contact extends Component {
                 value={this.state.message}
                 onChange={this.handleMessageText.bind(this)}
                 />
-                <button className="btn btn-primary" onClick={() =>this.addMessage()}>Submit</button>
+                <button className="btn btn-primary" onClick={this.handleSubmit.bind(this)}>Submit</button>
             </div>
         );
     }
