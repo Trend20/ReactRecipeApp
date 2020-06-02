@@ -60,7 +60,7 @@ class Contact extends Component {
                   onChange={this.handleMessageText.bind(this)}
                 />
                 </div>
-                <button className="btn btn-primary" onClick={this.handleSubmit.bind(this)}>Submit</button>
+                <button onClick={this.handleSubmit.bind(this)}>Submit</button>
                 </form>
             </div>
         );
