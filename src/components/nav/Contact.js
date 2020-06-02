@@ -18,7 +18,7 @@ class Contact extends Component {
                 type="text"
                 placeholder="Enter Username"
                 value={this.state.username}
-                onChange={(e) =>this.handleInput('username', e.target.value)}
+                onChange={this.handleUsernameInput.bind(this)}
                 />
                 <input
                 type="email"
