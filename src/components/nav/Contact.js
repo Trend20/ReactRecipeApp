@@ -16,9 +16,26 @@ class Contact extends Component {
             username: event.target.value,
         });
     }
+
+    handleEmailInput(event){
+        this.setState({
+            email: event.target.value,
+        });
+    }
+
+    handleMessageText(event){
+        this.setState({
+            message: event.target.value,
+        });
+    }
+
+    handleSubmit(event){
+        event.preventDefault();
+    }
     render() { 
         return (
             <div className="contact">
+                <form id="contact-form" method="POST">
                 <h3 className="text-center text-secondary">Contact Us</h3>
                 <input 
                 type="text"
@@ -38,6 +55,7 @@ class Contact extends Component {
                 onChange={this.handleMessageText.bind(this)}
                 />
                 <button className="btn btn-primary" onClick={this.handleSubmit.bind(this)}>Submit</button>
+                </form>
             </div>
         );
     }
