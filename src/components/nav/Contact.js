@@ -31,15 +31,22 @@ class Contact extends Component {
 
     handleSubmit(event){
         event.preventDefault();
+        
     }
     render() { 
         return (
             <div className="contact">
+            <div className="greetings">
+                <h3>Welcome to Steve's Recipe</h3>
+                <p>You can always connect with us at a 24/7 basis.</p>
+            </div>
                 <form id="contact-form" method="POST">
                    <h3 className="text-center text-secondary">Contact Us</h3>
                   <div className="form-group">
                   <input 
+                    className="form-control"
                     type="text"
+                    id="username"
                     placeholder="Enter Username"
                     value={this.state.username}
                     onChange={this.handleUsernameInput.bind(this)}
@@ -47,7 +54,9 @@ class Contact extends Component {
                   </div>
                 <div className="form-group">
                 <input
+                  className="form-control"
                   type="email"
+                  id="email"
                   placeholder="Enter email"
                   onChange={this.handleEmailInput.bind(this)}
                   value={this.state.email}
@@ -56,11 +65,12 @@ class Contact extends Component {
                 <div className="form-group">
                   <textarea
                   placeholder="Message"
+                  id="message"
                   value={this.state.message}
                   onChange={this.handleMessageText.bind(this)}
                 />
                 </div>
-                <button onClick={this.handleSubmit.bind(this)}>Submit</button>
+                <button onClick={this.handleSubmit.bind(this)} id="button">Submit</button>
                 </form>
             </div>
         );
