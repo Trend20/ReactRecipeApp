@@ -53,11 +53,13 @@ class Contact extends Component {
                 value={this.state.email}
                 />
                 </div>
+                <div className="form-group">
                 <textarea
                 placeholder="Message"
                 value={this.state.message}
                 onChange={this.handleMessageText.bind(this)}
                 />
+                </div>
                 <button className="btn btn-primary" onClick={this.handleSubmit.bind(this)}>Submit</button>
                 </form>
             </div>
