@@ -33,6 +33,10 @@ router.post('./send', (req,res,next) =>{
     const content = ` name: ${name} \n email: ${email} \n message: ${message}`
 
     const mail={
-        from: name
+        from: name,
+        to: 'Receiving email', 
+        // email you intend to use to receive emails
+        subject: 'New message fro contact form',
+        text: content
     }
 })
