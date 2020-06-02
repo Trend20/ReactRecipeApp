@@ -39,25 +39,25 @@ class Contact extends Component {
                    <h3 className="text-center text-secondary">Contact Us</h3>
                   <div className="form-group">
                   <input 
-                  type="text"
-                  placeholder="Enter Username"
-                  value={this.state.username}
-                  onChange={this.handleUsernameInput.bind(this)}
+                    type="text"
+                    placeholder="Enter Username"
+                    value={this.state.username}
+                    onChange={this.handleUsernameInput.bind(this)}
                   />
                   </div>
                 <div className="form-group">
                 <input
-                type="email"
-                placeholder="Enter email"
-                onChange={this.handleEmailInput.bind(this)}
-                value={this.state.email}
+                  type="email"
+                  placeholder="Enter email"
+                  onChange={this.handleEmailInput.bind(this)}
+                  value={this.state.email}
                 />
                 </div>
                 <div className="form-group">
-                <textarea
-                placeholder="Message"
-                value={this.state.message}
-                onChange={this.handleMessageText.bind(this)}
+                  <textarea
+                  placeholder="Message"
+                  value={this.state.message}
+                  onChange={this.handleMessageText.bind(this)}
                 />
                 </div>
                 <button className="btn btn-primary" onClick={this.handleSubmit.bind(this)}>Submit</button>
