@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './Contact.css';
+import { response } from 'express';
  
 class Contact extends Component {
     constructor(props){
@@ -31,7 +33,15 @@ class Contact extends Component {
 
     handleSubmit(event){
         event.preventDefault();
-        
+
+        axios({
+            method: 'POST',
+            url: 'http://localhost:3002/send',
+            data: this.state
+        }).then((response) =>{
+            
+        })
+
     }
     render() { 
         return (
