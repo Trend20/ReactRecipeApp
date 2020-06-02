@@ -10,33 +10,23 @@ class Contact extends Component {
             message:[],
         }
     }
-    handleInput = (e) =>{
-        const {name, value} = e.target;
-        this.setState({
-            [name]:value,
-        });
-    }
     render() { 
         return (
             <div className="contact">
                 <h3 className="text-center text-secondary">Contact Us</h3>
                 <input 
-                className="form-control"
                 type="text"
                 placeholder="Enter Username"
                 value={this.state.username}
                 onChange={(e) =>this.handleInput('username', e.target.value)}
                 />
                 <input
-                className="form-control"
                 type="email"
                 placeholder="Enter email"
                 onChange={(e) =>this.handleInput('email', e.target.value)}
                 value={this.state.email}
                 />
-                <input
-                className="form-control"
-                type="textbox"
+                <textarea
                 placeholder="Message"
                 value={this.state.message}
                 onChange={(e) =>this.state.handleInput('message', e.target.value)}
